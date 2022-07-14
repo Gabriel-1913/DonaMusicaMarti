@@ -1,0 +1,450 @@
+
+/*mis fuentes
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+/*paleta de colores
+background-color: rgb(218, 184, 139);
+background-color: rgb(243, 233, 221);
+background-color: rgb(183, 202, 219); 
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    /*10px = 1 rem*/
+}
+
+/**************************VISTA MOBILE**********************************/
+
+/*************ESTILOS DEL BODY**************/
+body{
+    background-color: rgb(253, 246, 236);
+    font-family: 'Montserrat', sans-serif;
+}
+
+/****AREAS GENERALES DE PAGINA****/
+
+header{
+    grid-area: header;
+    background-color: rgb(218, 184, 139);
+}
+
+main{
+    grid-area: main;
+    background-color: rgb(243, 233, 221);
+}
+
+aside{
+    grid-area: aside;
+    background-color: rgb(218, 184, 139);
+}
+
+footer{
+    grid-area: footer;
+    background-color: rgb(183, 202, 219);
+}
+
+/****GRILLA GENERAL DE PAGINA****/
+
+.grillaGeneral{
+    width: 100%;
+    margin: 0px auto;
+    display: grid;
+    grid-template-areas:
+    "header"
+    "main" 
+    "aside"
+    "footer";
+    gap: 10px;
+}
+
+/****ESTILOS GENERALES****/
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    justify-content: space-between;
+    border: 1px solid black;
+    padding: 2rem 0rem;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none
+}
+
+nav li a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+    padding: 2px;
+    margin: 5px;
+}
+
+div h1{
+    font-size: 2rem;
+    margin-left: 10px;
+}
+
+/**********INDEX MOBILE**********/
+
+.contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.imgIndex{
+    border-radius: 20px;
+    border: 1px double black;
+    margin-bottom: 10px;
+    }
+
+/*estilo de parrafo principal index*/
+.parrafoPrincipal{
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    border: 1px inset black;
+}
+
+/*estilo de cuadro de Mercado Pago*/
+.mercadoPago{
+    text-align: center;
+}
+
+.mercadoPago div{
+    background-color: rgb(183, 202, 219);
+    padding: 20px;
+    border: solid 3px black;
+    margin: 2rem 4rem;
+}
+
+/*estilo de aside (publicidad)*/
+
+.flexContPubli{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.flexContPubli img{
+    margin: 5px;
+    border: 1px solid black;
+}
+
+/*estilo de footer*/
+footer{
+    font-family: 'Roboto', sans-serif;
+    padding: 30px;
+}
+
+.redesSociales{
+    list-style: none;
+    display: flex;
+    justify-content: right;
+}
+
+.redesSociales img{
+    margin: 5px;
+}
+
+/**********PROYECTO MOBILE**********/
+
+/***Grilla Proyecto***/
+
+.grillaProyecto{
+    display: grid;
+    grid-template-areas: 
+        "introProyecto"
+        "imgProyecto1"
+        "imgProyecto2"   
+        "donaMusica"
+        "impactoGabi"    
+        "imgProyecto3"
+        "imgProyecto4"   
+        "instrumentos"
+        "sumate";
+    gap: 10px;
+    justify-items: center;
+}
+
+/***Areas de Proyecto***/
+
+.introProyecto{
+    grid-area: introProyecto;
+}
+
+.imgProyecto1{
+    grid-area: imgProyecto1;
+}
+
+.imgProyecto2{
+    grid-area: imgProyecto2;
+}
+
+.donaMusica{
+    grid-area: donaMusica;
+}
+
+.impactoGabi{
+    grid-area: impactoGabi;
+}
+
+.imgProyecto3{
+    grid-area: imgProyecto3;
+}
+
+.imgProyecto4{
+    grid-area: imgProyecto4;
+}
+
+.instrumentos{
+    grid-area: instrumentos;
+}
+
+.sumate{
+    grid-area: sumate;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 20px;
+}
+
+/*Estilos Generales Proyecto*/
+.textoProyecto{
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 20px;
+    margin: 10px;
+    border: 3px inset black;
+}
+
+.textoProyecto h2{
+    padding: 10px;
+}
+
+.imagenesProyecto{
+    border: 1px inset black;
+    margin: 0px;
+}
+
+/**********GALERÍA MOBILE**********/
+
+/***Grilla Galería***/
+
+.galeriaGrid{
+    display: grid;
+    grid-template-areas: 
+        "tituloGaleria"
+        "fotos2022"
+        "fotos2021"
+        "fotos2020"
+        "fotos2019"
+        "fotos2018";
+    gap: 10px;
+    justify-items: center;
+}
+
+/***Areas de Galería***/
+
+.titulo{
+    grid-area: tituloGaleria;   
+}
+
+.fotos2022{
+    grid-area: fotos2022
+}
+
+.fotos2021{
+    grid-area: fotos2021
+}
+
+.fotos2020{
+    grid-area: fotos2020
+}
+
+.fotos2019{
+    grid-area: fotos2019
+}
+
+.fotos2018{
+    grid-area: fotos2018
+}
+
+/*Estilos generales Galería*/
+
+.años{
+    text-align: center;
+}
+
+.imagenesGaleria{
+    background-color: rgb(183, 202, 219);
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px inset black;
+    padding: 10px;
+}
+
+/**********NOVEDADES MOBILE**********/
+
+/***Grilla Novedades***/
+
+.grillaNovedades{
+    display: grid;
+    grid-template-areas: 
+    "tituloNovedades"
+    "notaLosAndes"
+    "notaAireSantaFe"
+    "notaCanal9";
+    gap: 10px;
+    justify-content: center;
+}
+
+/***Areas de Novedades***/
+.tituloNovedades{
+    grid-area: tituloNovedades;
+}
+
+.notaLosAndes{
+    grid-area: notaLosAndes;
+}
+
+.notaAireSantaFe{
+    grid-area: notaAireSantaFe;
+}
+
+.notaCanal9{
+    grid-area: notaCanal9;
+}
+
+/*Estilos generales Novedades*/
+.tituloNovedades h2{
+    text-align: center;
+}
+
+.cuadroNovedades{
+    border: 1px inset black;
+    margin: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.cuadroNovedades h2{
+    text-align: center;
+}
+
+/**********CONTACTO MOBILE**********/
+
+/***Grilla Contacto***/
+.grillaContacto{
+    display: grid;
+    grid-template-areas: 
+    "tituloContacto"
+    "formularioContacto"
+    "sumateContacto"
+    "mercadoPagoContacto";
+    gap: 10px;
+    justify-items: center;
+}
+
+/***Areas de Contacto***/
+.tituloContacto{
+    grid-area: tituloContacto;
+}
+
+.formularioContacto{
+    grid-area: formularioContacto;
+}
+
+.sumateContacto{
+    grid-area: sumateContacto;
+    text-align: center
+}
+
+.mercadoPagoContacto{
+    grid-area: mercadoPagoContacto;
+}
+
+/*Estilos generales Contacto*/
+
+.formularioDonar{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(183, 202, 219);
+    border: 1px inset black;
+    margin: 0px;
+    padding: 20px;
+}
+
+.formularioDonar label{
+    text-align: left;
+    padding: 5px;
+}
+
+/**************************VISTA 768**********************************/
+@media (min-width: 768px) {
+    .grillaGeneral{
+        grid-template-areas:
+        "header header"
+        "main aside" 
+        "footer footer";
+        grid-template-columns: 3fr 1fr;
+    }
+
+    .flexContPubli{
+        flex-direction: column;
+    }
+
+    /*aside{
+        width: auto;
+    }*/
+}
+
+/**************************VISTA 1024**********************************/
+@media (min-width: 1024px) {
+    .grillaGeneral{
+        grid-template-areas:
+        "header header header"
+        "main main aside" 
+        "footer footer footer";
+    }
+
+    .fotoYlogo{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .fotoYlogo div{
+        padding: 10px;
+    }
+
+    .grillaProyecto{
+        grid-template-areas: 
+            "introProyecto imgProyecto1"
+            "imgProyecto2 donaMusica"
+            "impactoGabi imgProyecto3"
+            "imgProyecto4 instrumentos"
+            "sumate sumate";
+        justify-items: center;
+        align-items: center;
+    }
+
+}
+
+
