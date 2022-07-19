@@ -111,6 +111,11 @@ div h1{
     margin-bottom: 10px;
     }
 
+.imgIndex:hover{
+    transform: translate(5px, -5px);
+    transition: 2s;
+}
+
 /*estilo de parrafo principal index*/
 .parrafoPrincipal{
     margin: 10px;
@@ -124,13 +129,29 @@ div h1{
 /*estilo de cuadro de Mercado Pago*/
 .mercadoPago{
     text-align: center;
-}
-
-.mercadoPago div{
     background-color: rgb(183, 202, 219);
     padding: 20px;
     border: solid 3px black;
     margin: 2rem 4rem;
+}
+
+.mercadoPago:hover{
+    animation:mercadopago 3s;
+}
+@keyframes mercadopago{
+    0%{
+        transform: scale(2);
+    }
+    30%{
+        transform: translateX(50px);
+    }
+    60%{
+        transform: translateX(-50px);
+    }
+}
+
+.mercadoPago h3, .mercadoPago h2, .mercadoPago img{
+    padding: 5px;
 }
 
 /*estilo de aside (publicidad)*/
@@ -159,7 +180,9 @@ footer{
     justify-content: right;
 }
 
-.redesSociales img{
+.redesSociales img:hover{
+    transform:translateX (10px);
+    transition: 1s;
     margin: 5px;
 }
 
@@ -431,9 +454,8 @@ footer{
     }
 
     .fotoYlogo div{
-        padding: 10px;
+    padding: 10px;
     }
-
     .grillaProyecto{
         grid-template-areas: 
             "introProyecto imgProyecto1"
