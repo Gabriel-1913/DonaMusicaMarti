@@ -72,6 +72,10 @@ header{
     border: 1px solid black;
 }
 
+h1:hover{
+    color: rgb(178, 28, 28);
+}
+
 .navflex{
     display: flex;
     flex-direction: row;
@@ -124,6 +128,24 @@ header{
 }
 
 .preguntas h2{
+    animation-duration: 4s;
+    animation-name: moverTexto;
+    animation-iteration-count: infinite;
+}
+    
+@keyframes moverTexto{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.preguntas h2{
     padding: 1rem;
 }
 
@@ -137,6 +159,7 @@ header{
 .mercadoPago:hover{
     animation:mercadopago 3s;
 }
+
 @keyframes mercadopago{
     0%{
         transform: scale(2);
@@ -148,6 +171,7 @@ header{
         transform: translateX(-40px);
     }
 }
+
 
 .mercadoPago h3, .mercadoPago h2, .mercadoPago img{
     padding: 5px;
@@ -409,6 +433,9 @@ footer{
 
 /*Estilos generales Contacto*/
 
+.tituloContacto h2{
+    padding: 2rem;
+}
 
 
 /**************************VISTA 768**********************************/
