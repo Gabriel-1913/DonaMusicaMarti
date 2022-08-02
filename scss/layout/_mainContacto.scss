@@ -1,0 +1,32 @@
+.containerContacto{
+    @include flexCenterColumn;
+    div{
+        h2{
+            text-align: center;
+            padding: 10px;
+        }
+    }
+}
+
+.formularioContacto{
+    background-color: $color-celeste;
+    margin: 1rem 3rem;
+    padding: 2rem;
+    border-radius: $border-rad;
+    border: $border-normal;
+}
+
+.sumateContacto{
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: $border-rad;
+    border: $border-normal;
+    margin-top: 1rem;
+    margin-bottom: 3rem; 
+    p{
+        font-size: 2rem;
+    }
+}
+
+

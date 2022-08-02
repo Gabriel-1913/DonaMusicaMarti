@@ -1,0 +1,89 @@
+/***Grilla Proyecto***/
+
+.grillaProyecto{
+    display: grid;
+    grid-template-areas: 
+        "introProyecto"
+        "imgProyecto1"
+        "imgProyecto2"   
+        "donaMusica"
+        "impactoGabi"    
+        "imgProyecto3"
+        "imgProyecto4"   
+        "instrumentos"
+        "sumate";
+    gap: 10px;
+    justify-items: center;
+
+    @include desktop{
+        grid-template-areas: 
+            "introProyecto imgProyecto1"
+            "imgProyecto2 donaMusica"
+            "impactoGabi imgProyecto3"
+            "imgProyecto4 instrumentos"
+            "sumate sumate";
+        justify-content: center;
+        align-items: center;
+        }
+    }
+
+
+/***Areas de Proyecto***/
+
+.introProyecto{
+    grid-area: introProyecto;
+}
+
+.imgProyecto1{
+    grid-area: imgProyecto1;
+}
+
+.imgProyecto2{
+    grid-area: imgProyecto2;
+}
+
+.donaMusica{
+    grid-area: donaMusica;
+}
+
+.impactoGabi{
+    grid-area: impactoGabi;
+}
+
+.imgProyecto3{
+    grid-area: imgProyecto3;
+}
+
+.imgProyecto4{
+    grid-area: imgProyecto4;
+}
+
+.instrumentos{
+    grid-area: instrumentos;
+}
+
+.sumate{
+    grid-area: sumate;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 20px;
+}
+
+/*Estilos Generales Proyecto*/
+.textoProyecto{
+    background-color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 20px;
+    border-radius: $border-rad;
+    border: $border-normal;
+    
+    h2{
+        padding: 10px;
+    }
+}
+
+.imagenesProyecto{
+    border-radius: $border-rad;
+    border: $border-normal;
+}

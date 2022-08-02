@@ -1,0 +1,99 @@
+main{
+    grid-area: main;
+    background-color: $color-claro;
+    max-width: 100%;
+}
+
+.contenido{
+    @include flexCenterColumn;
+    max-width: 100%;
+    font-family: $main-font;
+    padding: 10px;
+
+    .fotoYlogo{
+        @include desktop{
+            @include flexCenterRow;
+        }
+
+        div{
+            padding: 1rem;
+        }
+}
+}
+
+.imgIndex{
+    border-radius: $border-rad;
+    border: $border-normal;
+    margin-bottom: 10px;
+    &:hover{
+        transform: translate(5px, -5px);
+        transition: 2s;
+    }
+}
+
+/*estilo de parrafo principal index*/
+.parrafoPrincipal{
+    background-color: $color-cuadtext;
+    margin: 5rem 5rem;
+    padding: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: $border-rad;
+    border: $border-normal;
+}
+
+/*estilo de cuadro de Mercado Pago*/
+.containermp{
+    @include flexCenterColumn
+}
+
+.preguntas{
+    text-align: center;
+    padding: 2rem;
+    h2{
+        animation-duration: 4s;
+        animation-name: moverTexto;
+        animation-iteration-count: infinite;
+        padding: 1rem;
+
+            @keyframes moverTexto{
+                0%{
+                    opacity: 0;
+                }
+                50%{
+                    opacity: 1;
+                }
+                100%{
+                    opacity: 0;
+                }
+            }
+    }
+}
+
+.mercadoPago{
+    background-color: $color-celeste;
+    padding: 20px;
+    border: solid 2px black;
+    margin-bottom: 3rem;
+    &:hover{
+        animation:mercadopago 3s;
+
+        @keyframes mercadopago{
+            0%{
+                transform: scale(2);
+            }
+            30%{
+                transform: translateX(20px);
+            }
+            60%{
+                transform: translateX(-40px);
+            }
+        }
+    }
+
+    h3{
+        text-align: center;
+    }
+    
+}

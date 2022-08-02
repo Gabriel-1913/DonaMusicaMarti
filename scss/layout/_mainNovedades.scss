@@ -1,0 +1,28 @@
+/***Grilla Novedades***/
+
+.containerNovedades{
+    @include flexCenterColumn;
+
+    div{
+        h2{
+            padding: 10px;
+        }
+    }
+}
+
+.medios{
+    background-color: white;
+    border-radius: $border-rad;
+    border: $border-normal;
+    padding: 30px;
+    margin: 10px;
+
+    h2{
+        text-align: center;
+    }
+    h3{
+        text-align: left;
+    }
+}
+
+

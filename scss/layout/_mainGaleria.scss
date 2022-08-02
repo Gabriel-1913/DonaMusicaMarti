@@ -1,0 +1,67 @@
+/***Grilla Galería***/
+
+.galeriaGrid{
+    display: grid;
+    grid-template-areas: 
+        "tituloGaleria"
+        "fotos2022"
+        "fotos2021"
+        "fotos2020"
+        "fotos2019"
+        "fotos2018";
+    gap: 10px;
+    justify-items: center;
+}
+
+/***Areas de Galería***/
+
+.titulo{
+    grid-area: tituloGaleria;   
+}
+
+.fotos2022{
+    grid-area: fotos2022
+}
+
+.fotos2021{
+    grid-area: fotos2021
+}
+
+.fotos2020{
+    grid-area: fotos2020
+}
+
+.fotos2019{
+    grid-area: fotos2019
+}
+
+.fotos2018{
+    grid-area: fotos2018
+}
+
+/*Estilos generales Galería*/
+
+.años{
+    text-align: center;
+}
+
+.imagenesGaleria{
+    background-color: $color-celeste;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: $border-rad;
+    border: $border-normal;
+    padding: 10px;
+
+    picture{
+        margin: 5px;
+
+        img{
+            border-radius: $border-rad;
+            border: $border-normal;
+        }
+    }
+    
+}

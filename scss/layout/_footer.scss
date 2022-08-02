@@ -1,0 +1,18 @@
+footer{
+    grid-area: footer;
+    background-color: $color-celeste;
+    max-width: 100%;
+    padding: 30px;
+}
+
+.redesSociales{
+    list-style: none;
+    display: flex;
+    justify-content: right;
+
+        img:hover{
+            transform:translateX (10px);
+            transition: 1s;   
+            margin: 5px;
+        }
+    }

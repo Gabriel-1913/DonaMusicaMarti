@@ -1,0 +1,25 @@
+.grillaGeneral{
+    max-width: 100%;
+    margin: 0px auto;
+    display: grid;
+    grid-template-areas:
+    "header"
+    "main" 
+    "aside"
+    "footer";
+    gap: 10px;
+    @include tablet{
+        grid-template-areas:
+        "header header"
+        "main aside" 
+        "footer footer";
+        grid-template-columns: 3fr 1fr;
+    }
+    @include desktop{
+        grid-template-areas:
+        "header header header"
+        "main main aside" 
+        "footer footer footer";
+        grid-template-columns: 2fr 2fr 1fr;
+    }
+}

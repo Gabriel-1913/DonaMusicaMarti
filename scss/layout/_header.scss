@@ -1,0 +1,19 @@
+header{
+    grid-area: header;
+    background-color: $color-oscuro;
+    max-width: 100%;
+    font-family: $title-font;
+    border: 1px solid black;
+}
+
+h1:hover{
+        color: rgb(178, 28, 28);
+    }
+
+.navflex{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-size: 2rem;
+    font-weight: bold;
+}
