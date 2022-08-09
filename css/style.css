@@ -1,9 +1,7 @@
 @charset "UTF-8";
-/*utilities*/
 /*paleta de colores*/
 /*tipografías*/
 /*bordes*/
-/*reset*/
 * {
   padding: 0;
   margin: 0;
@@ -13,7 +11,6 @@ html {
   font-size: 62.5%;
   /*10px = 1 rem*/ }
 
-/*grilla general*/
 .grillaGeneral {
   max-width: 100%;
   margin: 0px auto;
@@ -27,9 +24,8 @@ html {
   @media screen and (min-width: 1024px) {
     .grillaGeneral {
       grid-template-areas: "header header header" "main main aside"  "footer footer footer";
-      grid-template-columns: 2fr 2fr 1fr; } }
+      grid-template-columns: 3fr 3fr 1fr; } }
 
-/*estilos generales*/
 header {
   grid-area: header;
   background-color: #dab88b;
@@ -38,7 +34,7 @@ header {
   border: 1px solid black; }
 
 h1:hover {
-  color: #b21c1c; }
+  color: white; }
 
 .navflex {
   display: flex;
@@ -77,7 +73,6 @@ main {
     transform: translate(5px, -5px);
     transition: 2s; }
 
-/*estilo de parrafo principal index*/
 .parrafoPrincipal {
   background-color: white;
   margin: 5rem 5rem;
@@ -88,7 +83,6 @@ main {
   border-radius: 20px;
   border: 1px double black; }
 
-/*estilo de cuadro de Mercado Pago*/
 .containermp {
   display: flex;
   flex-direction: column;
@@ -112,12 +106,12 @@ main {
   100% {
     opacity: 0; } }
 
-.mercadoPago {
+.mercadoPago, .mercadoPagoContacto {
   background-color: #b7cadb;
   padding: 20px;
   border: solid 2px black;
   margin-bottom: 3rem; }
-  .mercadoPago:hover {
+  .mercadoPago:hover, .mercadoPagoContacto:hover {
     animation: mercadopago 3s; }
 
 @keyframes mercadopago {
@@ -127,10 +121,9 @@ main {
     transform: translateX(20px); }
   60% {
     transform: translateX(-40px); } }
-  .mercadoPago h3 {
+  .mercadoPago h3, .mercadoPagoContacto h3 {
     text-align: center; }
 
-/*estilo de aside (publicidad)*/
 aside {
   grid-area: aside;
   background-color: #dab88b;
@@ -167,19 +160,18 @@ footer {
     transition: 1s;
     margin: 5px; }
 
-/***Grilla Proyecto***/
 .grillaProyecto {
   display: grid;
   grid-template-areas: "introProyecto" "imgProyecto1" "imgProyecto2"    "donaMusica" "impactoGabi"     "imgProyecto3" "imgProyecto4"    "instrumentos" "sumate";
   gap: 10px;
-  justify-items: center; }
+  justify-items: center;
+  margin: 10px; }
   @media screen and (min-width: 1024px) {
     .grillaProyecto {
       grid-template-areas: "introProyecto imgProyecto1" "imgProyecto2 donaMusica" "impactoGabi imgProyecto3" "imgProyecto4 instrumentos" "sumate sumate";
       justify-content: center;
       align-items: center; } }
 
-/***Areas de Proyecto***/
 .introProyecto {
   grid-area: introProyecto; }
 
@@ -207,10 +199,9 @@ footer {
 .sumate {
   grid-area: sumate;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   margin: 20px; }
 
-/*Estilos Generales Proyecto*/
 .textoProyecto {
   background-color: white;
   text-align: center;
@@ -225,14 +216,13 @@ footer {
   border-radius: 20px;
   border: 1px double black; }
 
-/***Grilla Galería***/
 .galeriaGrid {
   display: grid;
   grid-template-areas: "tituloGaleria" "fotos2022" "fotos2021" "fotos2020" "fotos2019" "fotos2018";
   gap: 10px;
+  margin: 10px;
   justify-items: center; }
 
-/***Areas de Galería***/
 .titulo {
   grid-area: tituloGaleria; }
 
@@ -251,7 +241,6 @@ footer {
 .fotos2018 {
   grid-area: fotos2018; }
 
-/*Estilos generales Galería*/
 .años {
   text-align: center; }
 
@@ -270,7 +259,6 @@ footer {
       border-radius: 20px;
       border: 1px double black; }
 
-/***Grilla Novedades***/
 .containerNovedades {
   display: flex;
   flex-direction: column;

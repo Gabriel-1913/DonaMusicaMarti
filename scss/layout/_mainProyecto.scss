@@ -1,5 +1,3 @@
-/***Grilla Proyecto***/
-
 .grillaProyecto{
     display: grid;
     grid-template-areas: 
@@ -14,6 +12,7 @@
         "sumate";
     gap: 10px;
     justify-items: center;
+    margin: 10px;
 
     @include desktop{
         grid-template-areas: 
@@ -26,9 +25,6 @@
         align-items: center;
         }
     }
-
-
-/***Areas de Proyecto***/
 
 .introProyecto{
     grid-area: introProyecto;
@@ -65,11 +61,10 @@
 .sumate{
     grid-area: sumate;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     margin: 20px;
 }
 
-/*Estilos Generales Proyecto*/
 .textoProyecto{
     background-color: white;
     text-align: center;

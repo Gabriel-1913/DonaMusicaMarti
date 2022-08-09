@@ -1,9 +1,8 @@
-/*utilities*/
 @import "./utilities/variables";
 @import "./utilities/mixins";
 @import "./utilities/breakpoints";
 
-/*reset*/
+
 @import "./layout/reset";
 
 html{
@@ -11,10 +10,9 @@ html{
     /*10px = 1 rem*/
 }
 
-/*grilla general*/
+
 @import "./layout/grillaGeneral";
 
-/*estilos generales*/
 @import "./layout/header";
 @import "./layout/mainIndex";
 @import "./layout/aside";

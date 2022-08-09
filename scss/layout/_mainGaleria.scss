@@ -1,5 +1,3 @@
-/***Grilla Galería***/
-
 .galeriaGrid{
     display: grid;
     grid-template-areas: 
@@ -10,10 +8,9 @@
         "fotos2019"
         "fotos2018";
     gap: 10px;
+    margin: 10px;
     justify-items: center;
 }
-
-/***Areas de Galería***/
 
 .titulo{
     grid-area: tituloGaleria;   
@@ -38,8 +35,6 @@
 .fotos2018{
     grid-area: fotos2018
 }
-
-/*Estilos generales Galería*/
 
 .años{
     text-align: center;
