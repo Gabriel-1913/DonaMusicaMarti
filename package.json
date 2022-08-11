@@ -1,7 +1,7 @@
 {
   "name": "donamusicamarti",
   "version": "1.0.0",
-  "description": "",
+  "description": "Entregá instrumentos musicales para ser restaurados y entregados a quien lo necesite",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
