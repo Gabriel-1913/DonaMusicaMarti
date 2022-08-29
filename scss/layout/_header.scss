@@ -1,14 +1,10 @@
 header{
     grid-area: header;
-    background-color: $color-oscuro;
+    background-color: black;
     max-width: 100%;
     font-family: $title-font;
     border: 1px solid black;
 }
-
-h1:hover{
-        color: white;
-    }
 
 .navflex{
     display: flex;

@@ -1,6 +1,6 @@
 aside{
     grid-area: aside;
-    background-color: $color-oscuro;
+    background-color: $color-claro;
     max-width: 100%;
 
     .flexContPubli{
@@ -11,6 +11,7 @@ aside{
         }
 
         img{
+            width: 70%;
             margin-top: 10px;
             margin-bottom: 10px;
             border: 1px solid black;
