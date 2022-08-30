@@ -11,10 +11,14 @@ aside{
         }
 
         img{
-            width: 70%;
+            width: 30%;
             margin-top: 10px;
             margin-bottom: 10px;
             border: 1px solid black;
+            @include tablet{
+                width: 70%;
+            }
+                
         }
     }
 }
